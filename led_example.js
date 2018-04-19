@@ -2,8 +2,8 @@ var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 var LED = new Gpio(13, 'out'); //use GPIO pin 4, and specify that it is output
 var blinkInterval = setInterval(blinkLED, 500); //run the blinkLED function every 250ms
 
-const c = require('./modules/console.js');
-const Led7 = require('./modules/led7.js');
+const c = require('console.js');
+const Led7 = require('led7.js');
 
 Led7.setUp({ // We set up each pin for each segment of the lead
 	top_left	: 		27,
